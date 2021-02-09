@@ -85,11 +85,7 @@
 	}
 	.reservation_button
 	{   
-<<<<<<< HEAD
-		background: linear-gradient(to bottom right, #ee58ee,#ab1dab);
-=======
 		background: linear-gradient(to bottom right,  #f182f1,#5f0c5f);
->>>>>>> Aside
 		height: 50px;
 		margin: auto;
 		display: inline-flex;
@@ -100,6 +96,7 @@
 		border-radius: 50px;
 		padding-right: 20px;
         padding-left: 20px;
+		font-weight: 600;
 	}
 	.reservation_button_restaurant
 	{
@@ -141,8 +138,8 @@
 	  border: 1px solid #f6f6f6;
 	  box-shadow: 0 0 10px #0000002E;
 	}
-	.fonctionnement_icon{
-	  color: rgb(255, 255, 255);	
+	.fonctionnement_all_icon{
+	  color: #ab1dab;	
 	}
 
 	.fonctionnement_link
