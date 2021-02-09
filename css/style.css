@@ -85,7 +85,11 @@
 	}
 	.reservation_button
 	{   
+<<<<<<< HEAD
 		background: linear-gradient(to bottom right, #ee58ee,#ab1dab);
+=======
+		background: linear-gradient(to bottom right,  #f182f1,#5f0c5f);
+>>>>>>> Aside
 		height: 50px;
 		margin: auto;
 		display: inline-flex;
