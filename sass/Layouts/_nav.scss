@@ -1,0 +1,56 @@
+.localisation
+	{
+	 display:flex;
+	 justify-content: center;
+	 position: relative;
+	 background-color: $colour-secondary;
+	 width: auto;
+	 padding: 20px 0 20px 0;
+	 @include border-localisation ;
+	}
+	.localisation_nav
+	{
+	 
+	 font-size: 20px;
+	 font-weight: 700;
+	}
+	.localisation_icon{
+
+	 color: black;
+	 margin-right: 10px;
+	}
+	.information
+	{
+	 background-color: $colour-primary;
+	 width: auto;
+	 height: 300px;
+     padding-top: 20px;
+     padding-bottom: 50px;
+	
+    }
+    .information_ohmyfood{
+        margin: 5px 0 10px 10px;
+    }
+
+    .reservation
+	{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		text-align: center;
+		margin: 2px;
+		padding: 10px 0 10px 0;
+		
+	}
+	.reservation_title
+	{
+		font-size: 30px;
+		margin: 2px;
+		
+	}
+	.reservation_title_title
+	{
+		font-weight: normal;
+		font-size: 20px;
+		padding: 5px;
+	}

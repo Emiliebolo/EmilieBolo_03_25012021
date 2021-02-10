@@ -1,0 +1,41 @@
+.fonctionnement
+	{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin: 10px;
+	
+	}
+	.fonctionnement_title
+	{
+		font-size: 25px;
+        margin: 10px 0 30px 10px;
+		display:flex;
+	}
+	.fonctionnement_all
+	{
+		padding: 10px 0 30px 0;
+		
+	}
+	.fonctionnement_all_icons
+	{ 
+	  display: flex;
+	  justify-content: space-between;
+	  margin: 10px ;
+	  white-space: nowrap;
+	  background-color: #f2f3f4;
+	  font-size: 14px;
+	  font-weight: 600;
+      padding: 25px 80px 25px 60px;
+	  border-radius: 25px;
+	  border: 1px solid #f6f6f6;
+	  box-shadow: 0 0 10px #0000002E;
+	}
+	.fonctionnement_all_icon{
+	  color: #ab1dab;	
+	}
+
+	.fonctionnement_link
+	{
+		font-family: "Shrikhand", "cursive";
+	}
