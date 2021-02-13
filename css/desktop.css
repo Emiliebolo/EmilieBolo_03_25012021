@@ -254,7 +254,7 @@ a
 .footer
 {
     background: black;
-    width: 100%;
+    max-width: 100%;
     margin: auto;
     padding: 20px;
 	max-width: 1400px;
@@ -291,70 +291,66 @@ a
 /* menu version desktop  */
 .background_img{
 	margin: 0;
-	
-
 }
 .background_img_img{
-	box-sizing: border-box;
-	object-fit: cover;
-	width: 120%;
-	height: 10%;
-	
+	max-width: 100%;
+    width: 1500px;
+    height: 700px;
 }
 .map{
 	background-color: #f2f3f4;
-	padding-top: 50px;
+    border-radius: 90px 90px 0 0 ;
 	padding-bottom: 50px;
-	margin: 0;
-    width: 100%;
+	margin-top: -300px ;
+    max-width: 100%;
+    position: relative;
     
 }
 .map_title_icon{
-
+    display: flex;
+    justify-content: space-around;
 }
 .map_title{
-	margin: auto;
-	font-weight: 800;
-	font-size: 32px;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 25px;
+	font-weight: 1200;
+	font-size: 48px;
 }
 .map_icon{
+    padding-top: 40px;
 
 }
 .map_main-courses{
 	margin: 0 0 0 15px;
     display: flex;
-    white-space: nowrap;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-.map_main-courses_title{
-	font-size: 28px;
-    position: absolute;
-    left: 60px;
+    flex-direction: column;
     
-
-
-
 }
 .map_main-course{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.map_main-courses_title{
+	margin-left: 10px; 
+}
+.map_main-courses_title_title{
+    font-size: 28px; 
+}
+.map_main-course_course{
 	background-color: white;
 	box-shadow: 0 0 12px #0000002E;
 	border-radius: 20px;;
 	cursor: pointer;
 	height: 80px;
-	width: 370px;
-    margin: 20px 30px 40px 10px;
+	width: 320px;
+    margin: 0 10px 10px 10px;
     
 }
 .map_main-course_info{
 	margin: 15px 0 0 10px;
 	padding: 5px 0 0 0;
 	font-weight: 700;
-	font-size: 20px;
+	font-size: 18px;
 
 }
 .map_main-course_info_info{
@@ -364,7 +360,6 @@ a
 .order_button{
 	background: linear-gradient(to bottom right, #ee58ee,#ab1dab);
 	height: 40px;
-	margin: auto;
 	display: flex;
 	align-items: center;
 	text-align: center;
@@ -372,6 +367,8 @@ a
 	border-radius: 50px;
 	width: 240px;
 	justify-content: center;
+    margin: auto;
+
 }
 .order_button_restaurant{
 	text-decoration: none;
