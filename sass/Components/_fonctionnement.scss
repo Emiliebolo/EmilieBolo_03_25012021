@@ -1,16 +1,10 @@
-.fonctionnement
-	{
-		display: flex;
-		flex-direction: column;
-		text-align: center;
-		margin: 10px;
-	
-	}
+@media (max-width: 480px){
 	.fonctionnement_title
 	{
 		font-size: 25px;
         margin: 10px 0 30px 10px;
 		display:flex;
+		font-family: 'Shrikhand', cursive;
 	}
 	.fonctionnement_all
 	{
@@ -31,11 +25,91 @@
 	  border: 1px solid #f6f6f6;
 	  box-shadow: 0 0 10px #0000002E;
 	}
+	.fonctionnement_all_icon_icon{
+        background: #9356DC;
+        height: 20px;
+        width: 20px;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        position: absolute;
+        margin-left: -70px;
+        margin-top: -3px;
+}
 	.fonctionnement_all_icon{
-	  color: #ab1dab;	
+	  color: #9356DC;	
 	}
 
 	.fonctionnement_link
 	{
-		font-family: "Shrikhand", "cursive";
+		font-family: 'Roboto', sans-serif;
 	}
+}
+
+@media (min-width: 1400px){
+	.fonctionnement
+{
+    display: flex;
+    flex-direction: wrap;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 55px;
+	padding-top: 20px;
+
+
+}
+.fonctionnement_title
+{
+    font-size: 27px;
+	font-weight: 700;
+	position: absolute;
+	left: 100px;
+	top: 550px;
+    font-family: 'Shrikhand', cursive;
+    
+}
+.fonctionnement_all
+{
+    padding: 10px 0 70px 0;
+    
+}
+.fonctionnement_all_icons
+{ 
+  display: flex;
+  margin: auto ;
+  white-space: nowrap;
+  background-color: #f2f3f4;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 20px 120px 20px 40px;
+  border-radius: 20px;
+  border: 1px solid #f6f6f6;
+  box-shadow: 0 0 8px #0000002E;
+}
+.fonctionnement_all_icon_icon{
+        background: #9356DC;
+        height: 20px;
+        width: 20px;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        position: absolute;
+        margin-left: -50px;
+        margin-top: -3px;
+}
+
+.fonctionnement_all_icon{
+  color:#9356DC ;
+  padding-right: 30px;
+  font-size: 19px;	
+}
+
+.fonctionnement_link
+{
+    font-family: 'Roboto', sans-serif;
+}
+}

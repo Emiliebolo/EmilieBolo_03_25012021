@@ -1,12 +1,14 @@
-.localisation
+
+@media (max-width: 480px){
+	.localisation
 	{
 	 display:flex;
 	 justify-content: center;
 	 position: relative;
-	 background-color: $colour-secondary;
+	 background-color: #e5e8e8;
 	 width: auto;
 	 padding: 20px 0 20px 0;
-	 @include border-localisation ;
+	 border-top: solid 5px #d6dbdf;
 	}
 	.localisation_nav
 	{
@@ -21,18 +23,17 @@
 	}
 	.information
 	{
-	 background-color: $colour-primary;
+	 background-color: #f2f3f4;
 	 width: auto;
 	 height: 300px;
      padding-top: 20px;
-     padding-bottom: 50px;
+     padding-bottom: 80px;
 	
     }
     .information_ohmyfood{
         margin: 5px 0 10px 10px;
     }
-
-    .reservation
+	.reservation
 	{
 		display: flex;
 		flex-direction: column;
@@ -46,6 +47,7 @@
 	{
 		font-size: 30px;
 		margin: 2px;
+		font-family: 'Shrikhand', cursive;
 		
 	}
 	.reservation_title_title
@@ -54,3 +56,63 @@
 		font-size: 20px;
 		padding: 5px;
 	}
+}
+
+@media (min-width: 1400px){
+
+	.localisation
+	{
+	 display:flex;
+	 justify-content: center;
+	 position: relative;
+	 background-color: #e5e8e8;
+	 width: auto;
+	 padding: 20px 0 20px 0;
+	 border-top: solid 5px #d6dbdf;
+	}
+	.localisation_nav
+	{
+	 
+	 font-size: 20px;
+	 font-weight: 700;
+	}
+	.localisation_icon{
+	
+	 color: black;
+	 margin-right: 10px;
+	}
+	.information
+	{
+	 background-color: #f2f3f4;
+	 width: auto;
+	 height: 300px;
+	 padding-top: 20px;
+	}
+	.information_ohmyfood{
+		margin: 5px 220px 10px 220px;
+		text-align: center;
+	}
+	.reservation
+	{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		text-align: center;
+		margin: 2px;
+		padding: 10px 0 10px 0;
+		
+	}
+	.reservation_title
+	{
+		font-size: 30px;
+		margin: 2px;
+		font-family: 'Shrikhand', cursive;
+	}
+	.reservation_title_title
+	{
+		font-weight: normal;
+		font-size: 20px;
+		padding: 5px;
+	}
+     
+}
