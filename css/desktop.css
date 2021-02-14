@@ -303,6 +303,18 @@ a
 }
 
 /* menu version desktop  */
+.header_title_arrow{
+    display:flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+}
+.header_arrow{
+    position: absolute;
+    left: 90px;
+    top: 60px;
+    font-size: 50px;
+}
 .background_img{
 	margin: 0;
 }

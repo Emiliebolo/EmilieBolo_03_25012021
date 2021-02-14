@@ -23,7 +23,7 @@
 	.header_title_title
 	{
 	 font-weight: 1200;
-	 font-size: 60px;
+	 font-size: 40px;
 	 font-style: italic;
 	
 	}
@@ -290,15 +290,27 @@
 	 width: 8px;
 	}
 /* menu version mobil  */
+
+.header_title_arrow{
+    display:flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+}
+.header_arrow{
+    position: absolute;
+    left: 10px;
+    top: 40px;
+    font-size: 30px;
+	}
+
+
 	.background_img{
 		margin: 0;
-		
-
 	}
 	.background_img_img{
 		max-width: 100%;
 		width: auto;
-		
 	}
 	.map{
 		background-color: #f2f3f4;
