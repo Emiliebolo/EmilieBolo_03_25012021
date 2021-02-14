@@ -141,10 +141,24 @@ body, html
   padding: 20px 120px 20px 40px;
   border-radius: 20px;
   border: 1px solid #f6f6f6;
-  box-shadow: 0 0 15px #0000002E;
+  box-shadow: 0 0 8px #0000002E;
 }
+.fonctionnement_all_icon_icon{
+        background: #9356DC;
+        height: 20px;
+        width: 20px;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        position: absolute;
+        margin-left: -50px;
+        margin-top: -3px;
+}
+
 .fonctionnement_all_icon{
-  color:#FF79DA ;
+  color:#9356DC ;
   padding-right: 30px;
   font-size: 19px;	
 }
