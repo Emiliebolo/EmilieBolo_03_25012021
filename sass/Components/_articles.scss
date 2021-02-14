@@ -4,13 +4,13 @@
         display: flex;
         flex-direction: column;
         width: auto;
-        box-sizing: border-box;
+        box-sizing: $box_sizing;
 		margin: auto;
     }
     .restaurant_all{
         display: flex;
         flex-direction: column;
-        background-color: #f2f3f4;
+        background-color: $colour-background;
         width: 100%;
 		margin: auto }
 
@@ -22,21 +22,21 @@
     }
     .restaurant_articles{
         display: inline-block;
-        background-color: white;
+        background-color: $colour-white;
 		align-self: center;
-        box-shadow: 0 0 12px #0000002E;
+        @include box-shadow;
         border-radius: 20px;;
-        cursor: pointer;
+        cursor: $cursor;
         height: 210px;
         width: 300px;
 		margin-bottom: 30px;
     }
     a
     {
-      text-decoration: none;
+      text-decoration: $text_decoration;
       background-color: transparent;
-      cursor: pointer;
-      color: black;
+      cursor: $cursor;
+      color: $colour-blackk;
     }
     .restaurant_figure{
         margin: 0;
@@ -47,8 +47,8 @@
         width: 300px;
         height: 150px;
         border-radius: 20px 20px 0 0;
-        box-sizing: border-box;
-        object-fit: cover;
+        box-sizing: $box_sizing;
+        object-fit: $object_fit;
         
     }
 	.restaurant_new{
@@ -56,9 +56,9 @@
 		padding: 5px 15px;
 		right: 45px;
 		top: 183%;
-		background-color: #99E2D0;
+		background-color: $colour-background_restaurant;
 		border-radius: 3px;
-		color: darkgreen;
+		color: $colour-restaurant_new;
 
 	}
 	.restaurant_new_2{
@@ -66,9 +66,9 @@
 		padding: 5px 15px 5px 15px;
 		right: 45px;
 		top: 220%;
-		background-color: #99E2D0;
+		background-color: $colour-background_restaurant;
 		border-radius: 3px;
-		color: darkgreen;
+		color: $colour-restaurant_new;
 
 	}
     .restaurant_figcaption{
@@ -97,12 +97,12 @@
     .restaurant{
         display: flex;
         margin: auto;
-        box-sizing: border-box;;
+        box-sizing: $box_sizing;
         
     }
     .restaurant_all{
         display: flex;
-        background-color: #f2f3f4;
+        background-color: $colour-background;
         width: auto;
         height: auto;
         white-space: nowrap;
@@ -121,10 +121,10 @@
     }
     .restaurant_articles{
         
-        background-color: white;
-        box-shadow: 0 0 12px #0000002E;
+        background-color: $colour-white;
+        @include box-shadow;
         border-radius: 20px;;
-        cursor: pointer;
+        cursor: $cursor;
         height: 35%;
         width: 40%;
         margin: 60px;
@@ -132,10 +132,10 @@
     }
     a
     {
-      text-decoration: none;
+      text-decoration: $text_decoration;
       background-color: transparent;
-      cursor: pointer;
-      color: black;
+      cursor: $cursor;
+      color: $colour-black;
     }
     .restaurant_figure{
         margin: 0;
@@ -146,8 +146,8 @@
         width: 537px;
         height: 190px;
         border-radius: 20px 20px 0 0;
-        box-sizing: border-box;
-        object-fit: cover;
+        box-sizing: $box_sizing;
+        object-fit: $object_fit;
         
     }
     .restaurant_new{
@@ -155,9 +155,9 @@
         padding: 7px 17px;
         left: 520px;
         top: 117%;
-        background-color: #99E2D0;
+        background-color: $colour-background_restaurantD0;
         border-radius: 3px;
-        color: darkgreen;
+        color: $colour-restaurant_new;
     
     }
     .restaurant_new_2{
@@ -165,9 +165,9 @@
         padding: 7px 17px 7px 17px;
         left: 520px;
         top: 170%;
-        background-color: #99E2D0;
+        background-color: $colour-background_restaurant;
         border-radius: 3px;
-        color: darkgreen;
+        color: $colour-restaurant_new;
     
     }
     .restaurant_figcaption{

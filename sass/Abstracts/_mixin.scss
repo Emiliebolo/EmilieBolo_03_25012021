@@ -5,6 +5,10 @@
     border-top: solid 5px #d6dbdf;
 }
 
-@mixin background-order{
-    background: linear-gradient(to bottom right, #ee58ee,#ab1dab);
+@mixin background-button{
+    background: linear-gradient(to bottom right,#FF79DA, #9356DC);
+}
+
+@mixin border-fonctionnement_icon{
+    border: 1px solid #f6f6f6;
 }
