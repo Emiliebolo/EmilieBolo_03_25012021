@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 /*Version Desktop*/
 @media (min-width: 1400px){
@@ -73,8 +73,7 @@ body, html
 {
     font-size: 30px;
     margin: 2px;
-    
-
+    font-family: 'Shrikhand', cursive;
 }
 .reservation_title_title
 {
@@ -84,7 +83,7 @@ body, html
 }
 .reservation_button
 {   
-    background: linear-gradient(to bottom right, #f182f1,#5f0c5f);
+    background: linear-gradient(to bottom right, #9356DC,#FF79DA);
     height: 50px;
     margin: auto;
     display: inline-flex;
@@ -93,6 +92,7 @@ body, html
     text-align: center;
     color: white;
     border-radius: 50px;
+    font-weight: 700;
     padding-right: 50px;
     padding-left: 50px;
 }
@@ -122,6 +122,7 @@ body, html
 	position: absolute;
 	left: 100px;
 	top: 550px;
+    font-family: 'Shrikhand', cursive;
     
 }
 .fonctionnement_all
@@ -143,14 +144,14 @@ body, html
   box-shadow: 0 0 15px #0000002E;
 }
 .fonctionnement_all_icon{
-  color:#ab1dab ;
+  color:#FF79DA ;
   padding-right: 30px;
   font-size: 19px;	
 }
 
 .fonctionnement_link
 {
-    font-family: "Shrikhand", "cursive";
+    font-family: 'Roboto', sans-serif;
 }
 
 .restaurant{
@@ -176,8 +177,7 @@ body, html
    font-weight: 700;
    margin: 15px;
    position: absolute;
-   
-
+   font-family: 'Shrikhand', cursive;
 }
 .restaurant_articles{
     
@@ -304,7 +304,6 @@ a
 	margin-top: -300px ;
     max-width: 100%;
     position: relative;
-    
 }
 .map_title_icon{
     display: flex;
@@ -313,6 +312,7 @@ a
 .map_title{
 	font-weight: 1200;
 	font-size: 48px;
+    font-family: "Shrikhand", "cursive";
 }
 .map_icon{
     padding-top: 40px;
@@ -322,19 +322,21 @@ a
 	margin: 0 0 0 15px;
     display: flex;
     flex-direction: column;
-    
 }
 .map_main-course{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    align-self: center;
 }
 .map_main-courses_title{
 	margin-left: 10px; 
 }
 .map_main-courses_title_title{
-    font-size: 28px; 
+    font-size: 23px; 
 }
 .map_main-course_course{
 	background-color: white;
@@ -349,21 +351,21 @@ a
 .map_main-course_info{
 	margin: 15px 0 0 10px;
 	padding: 5px 0 0 0;
-	font-weight: 700;
-	font-size: 18px;
-
+	font-weight: 900;
+	font-size: 19px;
 }
 .map_main-course_info_info{
 	margin: 0px 0 0 10px;
 
 }
 .order_button{
-	background: linear-gradient(to bottom right, #ee58ee,#ab1dab);
+	background: linear-gradient(to bottom right, #9356DC,#FF79DA);
 	height: 40px;
 	display: flex;
 	align-items: center;
 	text-align: center;
 	color: white;
+    font-weight: 600;
 	border-radius: 50px;
 	width: 240px;
 	justify-content: center;
@@ -376,6 +378,4 @@ a
 	cursor: pointer;
 	color: white;
 }
-
-
 }
