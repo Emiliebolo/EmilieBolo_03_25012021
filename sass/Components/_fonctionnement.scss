@@ -25,6 +25,9 @@
 	  @include border-fonctionnement_icon;
     @include box-shadow;
 	}
+  .fonctionnement_all_icons:hover{
+    background-color:#f0dbff;
+}
 	.fonctionnement_all_icon_icon{
         background: $colour-background_icon;
         height: 20px;
@@ -87,6 +90,9 @@
   border-radius: 20px;
   @include border-fonctionnement_icon;
   @include box-shadox;
+}
+.fonctionnement_all_icons:active{
+  background-color:#f0dbff;
 }
 .fonctionnement_all_icon_icon{
    background: $colour-background_icon;

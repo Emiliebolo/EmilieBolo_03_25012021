@@ -95,6 +95,11 @@ body, html
     font-weight: 700;
     padding-right: 50px;
     padding-left: 50px;
+    transform: scale(1);
+    transition: transform 400ms;
+}
+.reservation_button:hover{
+    transform:scale(1.15);
 }
 .reservation_button_restaurant
 {
@@ -129,6 +134,9 @@ body, html
 {
     padding: 10px 0 70px 0;
     
+}
+.fonctionnement_all_icons:hover{
+    background-color:#f0dbff;
 }
 .fonctionnement_all_icons
 { 
@@ -308,7 +316,8 @@ a
     justify-content: center;
     align-self: center;
     align-items: center;
-}
+
+    }
 .header_arrow{
     position: absolute;
     left: 90px;
@@ -396,7 +405,12 @@ a
 	width: 240px;
 	justify-content: center;
     margin: auto;
+    transform: scale(1);
+    transition: transform 400ms;
+    }
 
+.order_button:hover{
+transform:scale(1.15);
 }
 .order_button_restaurant{
 	text-decoration: none;

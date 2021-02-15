@@ -1,0 +1,126 @@
+@media (max-width: 480px){
+    .map{
+		background-color: #f2f3f4;
+		position: relative;
+		padding-bottom: 50px;
+		padding-top: 50px;
+		margin: -100px 0 0 0;
+		border-radius: 50px 50px 0 0;
+	}
+	.map_title_icon{
+		display: flex;
+		justify-content: space-around;
+	}
+	.map_title{
+		margin: 0 0 0 15px;
+		font-weight: 800;
+		font-size: 29px;
+		font-family: "Shrikhand", "cursive";
+	}
+	.map_icon{
+      font-size: 20px;
+	  padding-top: 10px;
+	}
+	.map_main-courses{
+		margin: 0 0 0 15px;
+		flex-direction: column;
+		display: flex;
+	}
+	.map_main-courses_title{
+		margin: 10px;
+	}
+	.map_main-courses_title_title{
+        font-size: 18px;
+	}
+	.map_main-course{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+	.map_main-course_course{
+		background-color: white;
+        box-shadow: 0 0 12px #0000002E;
+        border-radius: 20px;
+        cursor: pointer;
+		margin: 0 10px 10px 0;
+	}
+	.map_main-course_info{
+		margin: 5px 0 0 20px;
+		padding: 10px 0 10px 0;
+		font-weight: 700;
+		font-size: 17px;
+
+	}
+	.map_main-course_info_info{
+		margin: 0px 0 0 20px;
+		padding-bottom: 10px;
+
+	}
+}
+
+
+
+@media (min-width: 1400px){
+    .map{
+        background-color: #f2f3f4;
+        border-radius: 90px 90px 0 0 ;
+        padding-bottom: 50px;
+        margin-top: -300px ;
+        max-width: 100%;
+        position: relative;
+    }
+    .map_title_icon{
+        display: flex;
+        justify-content: space-around;
+    }
+    .map_title{
+        font-weight: 1200;
+        font-size: 48px;
+        font-family: "Shrikhand", "cursive";
+    }
+    .map_icon{
+        padding-top: 40px;
+    
+    }
+    .map_main-courses{
+        margin: 0 0 0 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    .map_main-course{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+    }
+    .map_main-courses_title{
+        margin-left: 10px; 
+    }
+    .map_main-courses_title_title{
+        font-size: 23px; 
+    }
+    .map_main-course_course{
+        background-color: white;
+        box-shadow: 0 0 12px #0000002E;
+        border-radius: 20px;;
+        cursor: pointer;
+        height: 80px;
+        width: 320px;
+        margin: 0 10px 10px 10px;
+        
+    }
+    .map_main-course_info{
+        margin: 15px 0 0 10px;
+        padding: 5px 0 0 0;
+        font-weight: 900;
+        font-size: 19px;
+    }
+    .map_main-course_info_info{
+        margin: 0px 0 0 10px;
+    
+    }
+}

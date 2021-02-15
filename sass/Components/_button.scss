@@ -52,6 +52,7 @@
 }
 
 @media (min-width: 1400px){
+	
 	.reservation_button
 {   
     @include background-button;
@@ -66,6 +67,11 @@
     font-weight: 700;
     padding-right: 50px;
     padding-left: 50px;
+	transform: scale(1);
+	transition: transform 400ms;
+	&:hover {
+     transform: scale(1.15);
+	}
 }
 .reservation_button_restaurant
 {
@@ -87,7 +93,11 @@
 	width: 240px;
 	justify-content: center;
     margin: auto;
-
+	transform: scale(1);
+	transition: transform 400ms;
+	&:hover {
+     transform: scale(1.15);
+	}
 }
 .order_button_restaurant{
 	text-decoration: $text_decoration;
