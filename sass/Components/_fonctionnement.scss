@@ -1,17 +1,27 @@
 @media (max-width: 480px){
-	.fonctionnement_title
+
+  .fonctionnement
+	{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin: 10px;
+	
+	
+	 &_title
 	{
 		font-size: 25px;
     margin: 10px 0 30px 10px;
 		display:flex;
 		font-family: 'Shrikhand', cursive;
-	}
-	.fonctionnement_all
+    }
+	
+   &_all
 	{
 		padding: 10px 0 30px 0;
 		
 	}
-	.fonctionnement_all_icons
+	 &_all_icons
 	{ 
 	  display: flex;
 	  justify-content: space-between;
@@ -23,12 +33,12 @@
       padding: 25px 80px 25px 60px;
 	  border-radius: 25px;
 	  @include border-fonctionnement_icon;
-    @include box-shadow;
+    @include box_shadow;
 	}
-  .fonctionnement_all_icons:hover{
+  &_all_icons:hover{
     background-color:#f0dbff;
 }
-	.fonctionnement_all_icon_icon{
+	&_all_icon_icon{
         background: $colour-background_icon;
         height: 20px;
         width: 20px;
@@ -41,14 +51,16 @@
         margin-left: -70px;
         margin-top: -3px;
 }
-	.fonctionnement_all_icon{
+	&_all_icon{
 	  color: $colour-background_icon;	
 	}
 
-	.fonctionnement_link
+	&_link
 	{
 		font-family: 'Roboto', sans-serif;
 	}
+}
+
 }
 
 @media (min-width: 1400px){
@@ -58,27 +70,26 @@
     flex-direction: wrap;
     text-align: center;
     justify-content: space-around;
+    position: relative;
     margin-top: 55px;
 	  padding-top: 20px;
 
-
-}
-.fonctionnement_title
+  &_title
 {
-    font-size: 27px;
+    font-size: 32px;
 	  font-weight: 700;
   	position: absolute;
-  	left: 100px;
-	  top: 550px;
+  	top: -70px;
+    left: 40px;
     font-family: 'Shrikhand', cursive;
     
 }
-.fonctionnement_all
+  &_all
 {
     padding: 10px 0 70px 0;
     
 }
-.fonctionnement_all_icons
+  &_all_icons
 { 
   display: flex;
   margin: auto ;
@@ -89,12 +100,12 @@
   padding: 20px 120px 20px 40px;
   border-radius: 20px;
   @include border-fonctionnement_icon;
-  @include box-shadox;
+  @include box_shadow;
 }
-.fonctionnement_all_icons:active{
+ &_all_icons:hover{
   background-color:#f0dbff;
 }
-.fonctionnement_all_icon_icon{
+ &_all_icon_icon{
    background: $colour-background_icon;
    height: 20px;
    width: 20px;
@@ -108,14 +119,17 @@
    margin-top: -3px;
 }
 
-.fonctionnement_all_icon{
+ &_all_icon{
   color: $colour-background_icon ;
   padding-right: 30px;
   font-size: 19px;	
 }
 
-.fonctionnement_link
+ &_link
 {
     font-family: 'Roboto', sans-serif;
-}
+  }
+
+ }
+
 }

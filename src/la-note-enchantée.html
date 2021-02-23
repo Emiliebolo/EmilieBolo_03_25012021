@@ -7,110 +7,191 @@
  <script src="https://kit.fontawesome.com/7d17636476.js" crossorigin="anonymous"></script>
  <meta name="apple-mobile-web-app-capable" content="yes" />
  <title>La note enchantée</title>
- <link rel="stylesheet" href="../css/style.css">
- <link rel="stylesheet" href="../css/desktop.css">
+ <link rel="stylesheet" href="../sass/main.css">
 </head>
 
 
 <body>
+
+  <div class="loader">
+    <div class="loader__container">
+      <div class="loader__spinner loader__spinner_1"></div>
+      <div class="loader__spinner loader__spinner_2"></div>
+      <div class="loader__spinner loader__spinner_3"></div>
+    </div>
+  </div>
+  
  <header class="header_title">
   <div class="header_title_arrow">
     <a href="../index.html"><i class="fas fa-arrow-left header_arrow"></i></a>
     <h1 class="header_title_title">Ohmyfood</h1>
    </div>
  </header>
- 
- 
-  <div class="background_img">
+
    <img class="background_img_img" src="../img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
-  </div>
 
- <div class="map">
-   <div class="map_title_icon">
-    <h2 class="map_title">La note enchantée</h2>
-    <i class="map_icon far fa-heart fa-2x"></i>
-   </div>
+   <main class="menu-main">
+    <div class="menu-main_header">
+     <h2 class="menu-main_header_title">La note enchantée</h2>
+     <i class="menu-main_icon far fa-heart fa-2x"></i>
+    </div>
  
 
-  <div class="map_main-courses">
+  <div class="restaurants-menu">
 
-   <div class="map_main-courses_title">
-    <h3 class="map_main-courses_title_title">Entrées</h3>
-   </div>
+    <div class="menu">
+      <h3 class="menu_title">Entrées</h3>
 
-   <div class="map_main-course">
-
-    <div class="map_main-course_course">
-     <p class="map_main-course_info">Ravioles de foie gras</p>
-     <p class="map_main-course_info_info">Accompagnés de leur crème à la truffe</p>
-    </div>
-
-    <div class="map_main-course_course">
-     <p class="map_main-course_info">Caviar osciètre</p>
-     <p class="map_main-course_info_info">Sur blini à la farine de blé noir</p>
-    </div>
-
-    <div class="map_main-course_course">
-     <p class="map_main-course_info">Homard et espuma de potiron</p>
-     <p class="map_main-course_info_info">Mariné aux zestes d'orange</p>
-    </div>
-
-    <div class="map_main-course_course">
-     <p class="map_main-course_info">Foie gras de canard cuit entier</p>
-     <p class="map_main-course_info_info">Confiture de figue et pain toasté</p>
-    </div>
-   </div>
-
-   <div class="map_main-courses_title">
-    <h3 class="map_main-courses_title_title">Plats</h3>
-   </div>
+      <div class="menu-menu transition_1">
+        <header class="menu-menu_title">
+         <h4 class="menu-menu_title_title">Ravioles de foie gras</h4>
+         <p class="menu-menu_info">Accompagnés de leur crème à la truffe</p>
+        </header>
+        <div class="menu-menu_price">25€</div>
+         <div class="menu-menu_check">
+          <div class="menu-menu_check-icon">
+           <i class="menu-menu_icon fa-check fas"></i>
+          </div>
+         </div>
+        </div>
    
-   <div class="map_main-course">
+       <div class="menu-menu transition_2">
+        <header class="menu-menu_title">
+         <h4 class="menu-menu_title_title">Caviar osciètre</h4>
+         <p class="menu-menu_info">Sur blini à la farine de blé noir</p>
+        </header>
+   
+        <div class="menu-menu_price">35€</div>
+         <div class="menu-menu_check">
+          <div class="menu-menu_check-icon">
+           <i class="menu-menu_icon fa-check fas"></i>
+          </div>
+         </div>
+       </div>
+   
+       <div class="menu-menu transition_3">
+         <header class="menu-menu_title">
+          <h4 class="menu-menu_title_title">Homard et espuma de potiron</h4>
+          <p class="menu-menu_info">Mariné aux zestes d'orange</p>
+         </header>
+   
+         <div class="menu-menu_price">20€</div>
+          <div class="menu-menu_check">
+           <div class="menu-menu_check-icon">
+            <i class="menu-menu_icon fa-check fas"></i>
+           </div>
+          </div>
+        </div>
 
-    <div class="map_main-course_course">
-     <p class="map_main-course_info">Noix de coquilles Saint-Jacques</p>
-     <p class="map_main-course_info_info">Sur lit de purée de céleri-rave</p>
-    </div>
- 
-    <div class="map_main-course_course">
-     <p class="map_main-course_info">Langoustine poêlée</p>
-     <p class="map_main-course_info_info">Purée de patate douce</p>
-    </div>
- 
-    <div class="map_main-course_course">
-     <p class="map_main-course_info">Mijoté de queue de boeuf</p>
-     <p class="map_main-course_info_info">Et riz sauvage aux zestes de citron</p>
-    </div>
-   </div>
-
-   <div class="map_main-courses_title">
-    <h3 class="map_main-courses_title_title">Desserts</h3>
-   </div>
-
-   <div class="map_main-course">
-
-    <div class="map_main-course_course">
-     <p class="map_main-course_info">Macaron noisette et chocolat</p>
-     <p class="map_main-course_info_info">Glace au caramel brun et sel de Guérande</p>
-    </div>
- 
-    <div class="map_main-course_course">
-     <p class="map_main-course_info">Baba au rhum revisité</p>
-     <p class="map_main-course_info_info">Avec son coulis de citron</p>
-    </div>
- 
-    <div class="map_main-course_course">
-     <p class="map_main-course_info">Tarte au citron meringuée</p>
-     <p class="map_main-course_info_info">Déstructurée</p>
-    </div>
-  </div>
-
-  <div class="order_button">
-    <a  class="order_button_restaurant" href="">Commander</a>
-   </div>
- </div>
- </div>
-
+      <div class="menu-menu transition_4">
+        <header class="menu-menu_title">
+         <h4 class="menu-menu_title_title">Foie gras de canard cuit entier</h4>
+         <p class="menu-menu_info">Confiture de figue et pain toasté</p>
+        </header>
+  
+        <div class="menu-menu_price">35€</div>
+         <div class="menu-menu_check">
+          <div class="menu-menu_check-icon">
+           <i class="menu-menu_icon fa-check fas"></i>
+          </div>
+         </div>
+      </div>
+     </div>
+     
+      <div class="menu">
+       <h3 class="menu_title">Plats</h3>
+   
+       <div class="menu-menu transition_4">
+         <header class="menu-menu_title">
+          <h4 class="menu-menu_title_title">Noix de coquilles Saint-Jacques</h4>
+          <p class="menu-menu_info">Sur lit de purée de céleri-rave</p>
+         </header>
+         <div class="menu-menu_price">40€</div>
+         <div class="menu-menu_check">
+          <div class="menu-menu_check-icon">
+           <i class="menu-menu_icon fa-check fas"></i>
+          </div>
+         </div>
+       </div>
+    
+       <div class="menu-menu transition_5">
+         <header class="menu-menu_title">
+          <h4 class="menu-menu_title_title">Langoustine poêlée</h4>
+          <p class="menu-menu_info">Purée de patate douce</p>
+         </header>
+         <div class="menu-menu_price">35€</div>
+         <div class="menu-menu_check">
+           <div class="menu-menu_check-icon">
+             <i class="menu-menu_icon fa-check fas"></i>
+           </div>
+         </div>
+       </div>
+    
+       <div class="menu-menu transition_6">
+         <header class="menu-menu_title">
+          <h4 class="menu-menu_title_title">Mijoté de queue de boeuf</h4>
+          <p class="menu-menu_info">Et riz sauvage aux zestes de citron</p>
+         </header>
+   
+         <div class="menu-menu_price">44€</div>
+         <div class="menu-menu_check">
+          <div class="menu-menu_check-icon">
+           <i class="menu-menu_icon fa-check fas"></i>
+          </div>
+         </div>
+       </div>
+      </div>
+   
+       <div class="menu">
+        <h3 class="menu_title">Desserts</h3>
+   
+       <div class="menu-menu transition_7">
+         <header class="menu-menu_title">
+          <h4 class="menu-menu_title_title">Macaron noisette et chocolat</h4>
+          <p class="menu-menu_info">Glace au caramel brun et sel de Guérande</p>
+         </header>
+   
+         <div class="menu-menu_price">18€</div>
+         <div class="menu-menu_check">
+          <div class="menu-menu_check-icon">
+           <i class="menu-menu_icon fa-check fas"></i>
+          </div>
+        </div>
+       </div>
+    
+       <div class="menu-menu transition_8">
+         <header class="menu-menu_title">
+           <h4 class="menu-menu_title_title">Baba au rhum revisité </h4>
+           <p class="menu-menu_info">Avec son coulis de citron</p>
+         </header>
+   
+         <div class="menu-menu_price">22€</div>
+         <div class="menu-menu_check">
+          <div class="menu-menu_check-icon">
+           <i class="menu-menu_icon fa-check fas"></i>
+          </div>
+        </div>
+       </div>
+    
+       <div class="menu-menu transition_9">
+         <header class="menu-menu_title">
+          <h4 class="menu-menu_title_title">Tarte au citron meringuée</h4>
+          <p class="menu-menu_info">Déstructurée</p>
+         </header>
+   
+         <div class="menu-menu_price">23€</div>
+         <div class="menu-menu_check">
+          <div class="menu-menu_check-icon">
+           <i class="menu-menu_icon fa-check fas"></i>
+          </div>
+        </div>
+       </div>
+      </div>
+   
+      <div class="order_button">
+       <a  class="order_button_restaurant" href="">Commander</a>
+      </div>
+     </main>
  <footer class="footer">
   <div class="footer_link">
    <h4 class="footer_title">Ohmyfood</h4>

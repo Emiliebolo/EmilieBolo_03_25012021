@@ -5,45 +5,47 @@
         flex-direction: column;
         width: auto;
         box-sizing: $box_sizing;
-		margin: auto;
-    }
-    .restaurant_all{
+		    margin: auto;
+        position: relative;
+    
+     &_all{
         display: flex;
         flex-direction: column;
         background-color: $colour-background;
         width: 100%;
-		margin: auto }
+		    margin: auto }
 
-    .restaurant_title{
+    &_title{
        margin: 5px 0 10px 10px;
-	   font-size: 25px;
-	   font-family: 'Shrikhand', cursive;
+	     font-size: 25px;
+	     font-family: 'Shrikhand', cursive;
 
     }
-    .restaurant_articles{
+    &_articles{
         display: inline-block;
         background-color: $colour-white;
-		align-self: center;
+		    align-self: center;
         @include box-shadow;
         border-radius: 20px;;
         cursor: $cursor;
         height: 210px;
         width: 300px;
-		margin-bottom: 30px;
+		    margin-bottom: 30px;
+        position: relative;
     }
     a
     {
       text-decoration: $text_decoration;
       background-color: transparent;
       cursor: $cursor;
-      color: $colour-blackk;
+      color: $colour-black;
     }
-    .restaurant_figure{
+    &_figure{
         margin: 0;
 
 
     }
-    .restaurant_img{
+    &_img{
         width: 300px;
         height: 150px;
         border-radius: 20px 20px 0 0;
@@ -51,46 +53,71 @@
         object-fit: $object_fit;
         
     }
-	.restaurant_new{
+	&_new{
 		position: absolute;
 		padding: 5px 15px;
-		right: 45px;
-		top: 183%;
+    top: 10px;
+		right: 47px;
 		background-color: $colour-background_restaurant;
 		border-radius: 3px;
 		color: $colour-restaurant_new;
 
 	}
-	.restaurant_new_2{
+	&_new_2{
 		position: absolute;
 		padding: 5px 15px 5px 15px;
-		right: 45px;
-		top: 220%;
+		right: 47px;
+		top:15px;
 		background-color: $colour-background_restaurant;
 		border-radius: 3px;
 		color: $colour-restaurant_new;
 
 	}
-    .restaurant_figcaption{
+    &_figcaption{
         margin: auto;
         white-space: nowrap;
     }
-    .restaurant_title_title{
+    &_title_title{
         margin: 0 0 0 5px;
 
     }
-    .restaurant_information{
+    &_information{
         margin: 0 0 0 5px;
     }
-	.restaurant_hearts{
-		display: flex;
-		justify-content: flex-end;
-		padding-bottom: 20px;
-	}
-	.restaurant_heart{
-		font-size: 20px;
-		margin: 0 10px 0px 0;
-	}
+    &_hearts{
+      display: flex;
+      justify-content: flex-end;
+      padding-bottom: 20px;
+  }
+    &_heart{
+      font-size: 35px;
+      background-color: white;
+      opacity: 1;
+      z-index: 1;
+  }
+  &_heart,&_heart_heart{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+   &_hearts::before{
+  
+    opacity: 0;
+    transition: .5s;
+    content: "";
+    background: linear-gradient(0deg,#9356dc,#ff79da);
+ }
+  
+ &_heart_heart{
+    color: #9356dc;
+}
+ &_heart:active{
+
+    opacity: 0 !important;
+    transition-duration: 0.3s;
+}
+
+  }
 }
 
 @media (min-width: 1400px){
@@ -99,8 +126,8 @@
         margin: auto;
         box-sizing: $box_sizing;
         
-    }
-    .restaurant_all{
+    
+      &_all{
         display: flex;
         background-color: $colour-background;
         width: auto;
@@ -112,16 +139,17 @@
         padding: 30px;
         
         }
-    .restaurant_title{
+      &_title{
        font-size: 32px;
        font-weight: 700;
        margin: 15px;
        position: absolute;
        font-family: 'Shrikhand', cursive;
     }
-    .restaurant_articles{
+      &_articles{
         
         background-color: $colour-white;
+        position: relative;
         @include box-shadow;
         border-radius: 20px;;
         cursor: $cursor;
@@ -137,58 +165,83 @@
       cursor: $cursor;
       color: $colour-black;
     }
-    .restaurant_figure{
+      &_figure{
         margin: 0;
     
     
     }
-    .restaurant_img{
-        width: 537px;
+      &_img{
+        width: 585px;
         height: 190px;
         border-radius: 20px 20px 0 0;
         box-sizing: $box_sizing;
         object-fit: $object_fit;
         
     }
-    .restaurant_new{
+       &_new{
         position: absolute;
         padding: 7px 17px;
-        left: 520px;
-        top: 117%;
-        background-color: $colour-background_restaurantD0;
-        border-radius: 3px;
-        color: $colour-restaurant_new;
-    
-    }
-    .restaurant_new_2{
-        position: absolute;
-        padding: 7px 17px 7px 17px;
-        left: 520px;
-        top: 170%;
+        right: 7px;
+        top: 15px;
         background-color: $colour-background_restaurant;
         border-radius: 3px;
         color: $colour-restaurant_new;
     
     }
-    .restaurant_figcaption{
+       &_new_2{
+        position: absolute;
+        padding: 7px 17px 7px 17px;
+        right: 5px;
+        top: 17px;
+        background-color: $colour-background_restaurant;
+        border-radius: 3px;
+        color: $colour-restaurant_new;
+    
+    }
+       &_figcaption{
         margin: auto;
         white-space: nowrap;
     }
-    .restaurant_title_title{
+       &_title_title{
         margin: 0 0 0 5px;
     
     }
-    .restaurant_information{
+      &_information{
         margin: 0 0 0 5px;
     }
-    .restaurant_hearts{
+      &_hearts{
         display: flex;
         justify-content: flex-end;
         padding-bottom: 20px;
     }
-    .restaurant_heart{
-        font-size: 20px;
-        margin: 0 10px 0px 0;
+      &_heart{
+        font-size: 35px;
+        background-color: white;
+        opacity: 1;
+        z-index: 1;
     }
+    &_heart,&_heart_heart{
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+  }
+     &_hearts::before{
     
+      opacity: 0;
+      transition: .5s;
+      content: "";
+      background: linear-gradient(0deg,#9356dc,#ff79da);
+   }
+    
+   &_heart_heart{
+      color: #9356dc;
+}
+   &_heart:hover{
+
+      opacity: 0 !important;
+      transition-duration: 0.3s;
+}
+    
+ }
+
 }

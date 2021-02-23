@@ -1,126 +1,400 @@
 @media (max-width: 480px){
-    .map{
-		background-color: #f2f3f4;
-		position: relative;
-		padding-bottom: 50px;
-		padding-top: 50px;
-		margin: -100px 0 0 0;
-		border-radius: 50px 50px 0 0;
-	}
-	.map_title_icon{
-		display: flex;
-		justify-content: space-around;
-	}
-	.map_title{
-		margin: 0 0 0 15px;
-		font-weight: 800;
-		font-size: 29px;
-		font-family: "Shrikhand", "cursive";
-	}
-	.map_icon{
+
+  .background_img_img{
+
+    margin-bottom: -30px;
+    max-height: 350px;
+    object-fit: cover;
+    width: 100%;
+    
+  }
+
+main{
+  display: block;
+}
+.menu-main{
+      background-color: $colour-background;
+      border-radius: 90px 90px 0 0 ;
+      padding-bottom: 50px;
+      margin-top: -50px;
+      max-width: 100%;
+      position: relative;
+   
+      &_header{
+        display: flex;
+        justify-content: space-around;
+       }
+	  &_header_title{
+      font-weight: 700;
       font-size: 20px;
-	  padding-top: 10px;
-	}
-	.map_main-courses{
+      font-family: "Shrikhand", "cursive";
+     }
+  &_icon{
+    padding-top: 20px;
+
+    } 
+
+    }  
+  .restaurants-menu{ 
 		margin: 0 0 0 15px;
 		flex-direction: column;
 		display: flex;
-	}
-	.map_main-courses_title{
-		margin: 10px;
-	}
-	.map_main-courses_title_title{
-        font-size: 18px;
-	}
-	.map_main-course{
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		flex-wrap: wrap;
-	}
-	.map_main-course_course{
-		background-color: white;
-        box-shadow: 0 0 12px #0000002E;
-        border-radius: 20px;
-        cursor: pointer;
-		margin: 0 10px 10px 0;
-	}
-	.map_main-course_info{
-		margin: 5px 0 0 20px;
-		padding: 10px 0 10px 0;
-		font-weight: 700;
-		font-size: 17px;
 
-	}
-	.map_main-course_info_info{
-		margin: 0px 0 0 20px;
-		padding-bottom: 10px;
+    }
+	
+  .menu{
+      max-width: 100%;
+      overflow: hidden;
+      padding: 0px 10px;
 
-	}
+	  &_title{ 
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    padding-bottom: 6px;
+    position: relative;
+    text-transform: uppercase;
+    &::after {
+    background-color: $colour-background_restaurant;
+    bottom: 0;
+    content: "";
+    height: 4px;
+    left: 0;
+    position: absolute;
+    width: 30px;
+  }
+
+  }
+
+  }
+ .menu-menu{
+    background-color: $colour-white;
+    @include box_shadow;
+    border-radius: 10px;;
+    max-width: 100%;
+    margin: 10px 0px;
+    padding: 10px;
+    overflow: hidden;
+    cursor: $cursor;
+    animation: menu-transition 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    transform:scale(0);
+    
+@keyframes menu-transition {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  
+  &_title{
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    margin: 0;
+  }
+ 
+ &_title_title{
+    margin: 0;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 19px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+ &_info{
+    margin: 0px ;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+   }
+
+&_price{
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 600;
+  padding-left: 18px;
+  align-items: flex-end;
+  font-family: "Roboto", sans-serif;
+  }
+
+&_check{
+  background-color: $colour-background_restaurant;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -50px -250px 0 325px;
+  transition-duration: .7s;
+  width: 103px;
+  height: 55px;
+
+  }
+&:active, &_check{
+ 
+    margin-right: -60px;
+  }
+
+&_check-icon{
+  height: 25.6px;
+  width: 25.6px;
+  background-color: $colour-white;
+  color: $colour-background_restaurant;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 100px;
+  transition-duration: 0.9s;
+}
+&:active, &_check-icon{
+transform: rotate(0);
+}
+&_icon{
+color: $colour-background_restaurant;
+display: inline-block;
+
 }
 
+}
 
+.transition_1{
+      animation-delay: 0s;
+  }
+.transition_2{
+      animation-delay: 0.1s;
+  }
+.transition_2{
+      animation-delay: 0.2s;
+  }
+.transition_3{
+      animation-delay: 0.3s;
+      }
+
+.transition_4{
+      animation-delay: 0.4s;
+      }
+.transition_5{
+      animation-delay: 0.5s;
+      }
+.transition_6{
+       animation-delay: 0.6s;
+      }
+.transition_7{
+       animation-delay: 0.7s;
+      }
+.transition_8{
+       animation-delay: 0.8s;
+     }
+.transition_9{
+      animation-delay: 0.9s;
+      }
+
+      }
 
 @media (min-width: 1400px){
-    .map{
-        background-color: #f2f3f4;
+  
+    .background_img_img{
+
+      margin-bottom: -30px;
+      max-height: 350px;
+      object-fit: cover;
+      width: 100%;
+      
+    }
+
+  main{
+    display: block;
+  }
+  .menu-main{
+        background-color: $colour-background;
         border-radius: 90px 90px 0 0 ;
         padding-bottom: 50px;
-        margin-top: -300px ;
+        margin-top: -50px;
         max-width: 100%;
         position: relative;
-    }
-    .map_title_icon{
+    
+     &_header{
         display: flex;
         justify-content: space-around;
     }
-    .map_title{
-        font-weight: 1200;
-        font-size: 48px;
+     &_header_title{
+        font-weight: 700;
+        font-size: 38px;
         font-family: "Shrikhand", "cursive";
     }
-    .map_icon{
-        padding-top: 40px;
+     &_icon{
+        padding-top: 50px;
     
     }
-    .map_main-courses{
-        margin: 0 0 0 15px;
-        display: flex;
-        flex-direction: column;
+
     }
-    .map_main-course{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        align-items: center;
-        align-content: center;
-        align-self: center;
+    .restaurants-menu{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+        margin: 0 50px;
+
     }
-    .map_main-courses_title{
-        margin-left: 10px; 
+    .menu{
+      max-width: 100%;
+      overflow: hidden;
+      padding: 0px 10px;
+     
+     &_title{
+      font-family: "Roboto", sans-serif;
+      font-weight: normal;
+      padding-bottom: 6px;
+      position: relative;
+      text-transform: uppercase;
+      &::after {
+      background-color: $colour-background_restaurant;
+      bottom: 0;
+      content: "";
+      height: 4px;
+      left: 0;
+      position: absolute;
+      width: 30px;
     }
-    .map_main-courses_title_title{
-        font-size: 23px; 
+
+
     }
-    .map_main-course_course{
-        background-color: white;
-        box-shadow: 0 0 12px #0000002E;
-        border-radius: 20px;;
-        cursor: pointer;
-        height: 80px;
-        width: 320px;
-        margin: 0 10px 10px 10px;
-        
-    }
-    .map_main-course_info{
-        margin: 15px 0 0 10px;
-        padding: 5px 0 0 0;
-        font-weight: 900;
-        font-size: 19px;
-    }
-    .map_main-course_info_info{
-        margin: 0px 0 0 10px;
-    
-    }
+
 }
+  .menu-menu{
+        background-color: $colour-white;
+        @include box-shadow;
+        border-radius: 10px;;
+        max-width: 100%;
+        margin: 30px 0px;
+        padding: 15px;
+        overflow: hidden;
+        cursor: pointer;
+        animation: menu-transition 0.7s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        transform:scale(0);
+        
+    @keyframes menu-transition {
+        0% {
+          transform: scale(0);
+          opacity: 0;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      &_title{
+        flex: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; 
+      }
+     
+     &_title_title{
+        margin: 0;
+        overflow: hidden;
+        font-weight: bold;
+        font-size: 19px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+     &_info{
+        margin: 0px ;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+       }
+
+   &_price{
+      display: flex;
+      justify-content: flex-end;
+      font-weight: 600;
+      padding-left: 18px;
+      align-items: flex-end;
+      font-family: "Roboto", sans-serif;
+      }
+  
+   &_check{
+      background-color: $colour-background_restaurant;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: -50px -250px 0 325px;
+      transition-duration: .7s;
+      width: 103px;
+      height: 55px;
+
+      }
+    &:hover &_check{
+     
+        margin-right: -10px;
+      }
+  
+    &_check-icon{
+      height: 25.6px;
+      width: 25.6px;
+      background-color: $colour-white;
+      color:$colour-background_restaurant;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius: 100px;
+      transition-duration: 0.9s;
+  }
+  &:hover &_check-icon{
+    transform: rotate(0);
+  }
+  &_icon{
+    color:$colour-background_restaurant;
+    display: inline-block;
+  }
+
+  }
+
+ .transition_1{
+          animation-delay: 0s;
+      }
+ .transition_2{
+          animation-delay: 0.1s;
+      }
+ .transition_2{
+          animation-delay: 0.2s;
+      }
+ .transition_3{
+          animation-delay: 0.3s;
+          }
+  
+ .transition_4{
+          animation-delay: 0.4s;
+          }
+ .transition_5{
+          animation-delay: 0.5s;
+          }
+ .transition_6{
+           animation-delay: 0.6s;
+          }
+ .transition_7{
+           animation-delay: 0.7s;
+          }
+ .transition_8{
+           animation-delay: 0.8s;
+         }
+ .transition_9{
+          animation-delay: 0.9s; 
+          }  
+        }
+   

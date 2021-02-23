@@ -7,104 +7,177 @@
  <script src="https://kit.fontawesome.com/7d17636476.js" crossorigin="anonymous"></script>
  <meta name="apple-mobile-web-app-capable" content="yes" />
  <title>Le délice des sens</title>
- <link rel="stylesheet" href="../css/style.css">
- <link rel="stylesheet" href="../css/desktop.css">
+ <link rel="stylesheet" href="../sass/main.css">
 </head>
 
 
 <body>
+
+  <div class="loader">
+    <div class="loader__container">
+      <div class="loader__spinner loader__spinner_1"></div>
+      <div class="loader__spinner loader__spinner_2"></div>
+      <div class="loader__spinner loader__spinner_3"></div>
+    </div>
+  </div>
+  
  <header class="header_title">
   <div class="header_title_arrow">
     <a href="../index.html"><i class="fas fa-arrow-left header_arrow"></i></a>
     <h1 class="header_title_title">Ohmyfood</h1>
   </div>
  </header>
- 
- 
-  <div class="background_img">
-   <img class="background_img_img" src="../img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
-  </div>
-
-  <div class="map">
-   <div class="map_title_icon">
-    <h2 class="map_title">Le délice des sens</h2>
-    <i class="map_icon far fa-heart fa-2x"></i>
-   </div>
- 
-
- <div class="map_main-courses">
-
-  <div class="map_main-courses_title">
-   <h3 class="map_main-courses_title_title">Entrées</h3>
-  </div>
   
-  <div class="map_main-course">
+   <img class="background_img_img" src="../img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
 
-   <div class="map_main-course_course">
-    <p class="map_main-course_info">Tartare de thon</p>
-    <p class="map_main-course_info_info">Assaisonné au yuzu</p>
-   </div>
-
-   <div class="map_main-course_course">
-    <p class="map_main-course_info">Bouchée de homard croustillant</p>
-    <p class="map_main-course_info_info">Et sa farandole de petits légumes</p>
-   </div>
-
-   <div class="map_main-course_course">
-    <p class="map_main-course_info">Velouté de cèpes </p>
-    <p class="map_main-course_info_info">Aux truffes</p>
-   </div>
-  </div>
-
-  <div class="map_main-courses_title">
-   <h3 class="map_main-courses_title_title">Plats</h3>
-  </div>
+   <main class="menu-main">
+    <div class="menu-main_header">
+     <h2 class="menu-main_header_title">Le délice des sens</h2>
+     <i class="menu-main_icon far fa-heart fa-2x"></i>
+    </div>
  
-  <div class="map_main-course">
 
-   <div class="map_main-course_course">
-    <p class="map_main-course_info">Poulet rôti aux herbes de Provence</p>
-    <p class="map_main-course_info_info">Et sa crème de truffe</p>
-   </div>
- 
-   <div class="map_main-course_course">
-     <p class="map_main-course_info">Langouste rôtie</p>
-     <p class="map_main-course_info_info">Et ses légumes de saison</p>
-   </div>
- 
-   <div class="map_main-course_course">
-     <p class="map_main-course_info">Côte de boeuf Angus</p>
-     <p class="map_main-course_info_info">Et sa purée de panais</p>
-   </div>
-  </div>
+    <div class="restaurants-menu">
 
-  <div class="map_main-courses_title">
-   <h3 class="map_main-courses_title_title">Desserts</h3>
-  </div>
-
-  <div class="map_main-course">
-
-   <div class="map_main-course_course">
-    <p class="map_main-course_info">Farandole de desserts</p>
-    <p class="map_main-course_info_info">Du chef</p>
-   </div>
- 
-  <div class="map_main-course_course">
-     <p class="map_main-course_info">Crème brulée</p>
-     <p class="map_main-course_info_info">Revisitée</p>
-  </div>
- 
-   <div class="map_main-course_course">
-     <p class="map_main-course_info">Tiramisu</p>
-     <p class="map_main-course_info_info">À la noisette</p>
-   </div>
-  </div>
-
-  <div class="order_button">
-    <a  class="order_button_restaurant" href="">Commander</a>
-   </div>
- </div>
-</div>
+      <div class="menu">
+       <h3 class="menu_title">Entrées</h3>
+   
+       <div class="menu-menu transition_1">
+        <header class="menu-menu_title">
+         <h4 class="menu-menu_title_title">Tartare de thon</h4>
+         <p class="menu-menu_info">Assaisonné au yuzu</p>
+        </header>
+        <div class="menu-menu_price">25€</div>
+         <div class="menu-menu_check">
+          <div class="menu-menu_check-icon">
+           <i class="menu-menu_icon fa-check fas"></i>
+          </div>
+         </div>
+        </div>
+   
+       <div class="menu-menu transition_2">
+        <header class="menu-menu_title">
+         <h4 class="menu-menu_title_title">Bouchée de homard croustillant</h4>
+         <p class="menu-menu_info">Et sa farandole de petits légumes</p>
+        </header>
+   
+        <div class="menu-menu_price">35€</div>
+         <div class="menu-menu_check">
+          <div class="menu-menu_check-icon">
+           <i class="menu-menu_icon fa-check fas"></i>
+          </div>
+         </div>
+       </div>
+   
+       <div class="menu-menu transition_3">
+         <header class="menu-menu_title">
+          <h4 class="menu-menu_title_title">Velouté de cèpes</h4>
+          <p class="menu-menu_info">Aux truffes</p>
+         </header>
+   
+         <div class="menu-menu_price">20€</div>
+          <div class="menu-menu_check">
+           <div class="menu-menu_check-icon">
+            <i class="menu-menu_icon fa-check fas"></i>
+           </div>
+          </div>
+       </div>
+      </div>
+     
+      <div class="menu">
+       <h3 class="menu_title">Plats</h3>
+   
+       <div class="menu-menu transition_4">
+         <header class="menu-menu_title">
+          <h4 class="menu-menu_title_title">Poulet rôti aux herbes de Provence</h4>
+          <p class="menu-menu_info">Et sa crème de truffe</p>
+         </header>
+         <div class="menu-menu_price">40€</div>
+         <div class="menu-menu_check">
+          <div class="menu-menu_check-icon">
+           <i class="menu-menu_icon fa-check fas"></i>
+          </div>
+         </div>
+       </div>
+    
+       <div class="menu-menu transition_5">
+         <header class="menu-menu_title">
+          <h4 class="menu-menu_title_title">Langouste rôtie </h4>
+          <p class="menu-menu_info">Et ses légumes de saison</p>
+         </header>
+         <div class="menu-menu_price">35€</div>
+         <div class="menu-menu_check">
+           <div class="menu-menu_check-icon">
+             <i class="menu-menu_icon fa-check fas"></i>
+           </div>
+         </div>
+       </div>
+    
+       <div class="menu-menu transition_6">
+         <header class="menu-menu_title">
+          <h4 class="menu-menu_title_title">Côte de boeuf Angus</h4>
+          <p class="menu-menu_info">Et sa purée de panais</p>
+         </header>
+   
+         <div class="menu-menu_price">44€</div>
+         <div class="menu-menu_check">
+          <div class="menu-menu_check-icon">
+           <i class="menu-menu_icon fa-check fas"></i>
+          </div>
+         </div>
+       </div>
+      </div>
+   
+       <div class="menu">
+        <h3 class="menu_title">Desserts</h3>
+   
+       <div class="menu-menu transition_7">
+         <header class="menu-menu_title">
+          <h4 class="menu-menu_title_title">Farandole de desserts</h4>
+          <p class="menu-menu_info">Du chef</p>
+         </header>
+   
+         <div class="menu-menu_price">18€</div>
+         <div class="menu-menu_check">
+          <div class="menu-menu_check-icon">
+           <i class="menu-menu_icon fa-check fas"></i>
+          </div>
+        </div>
+       </div>
+    
+       <div class="menu-menu transition_8">
+         <header class="menu-menu_title">
+           <h4 class="menu-menu_title_title">Crème brulée</h4>
+           <p class="menu-menu_info">Revisité</p>
+         </header>
+   
+         <div class="menu-menu_price">22€</div>
+         <div class="menu-menu_check">
+          <div class="menu-menu_check-icon">
+           <i class="menu-menu_icon fa-check fas"></i>
+          </div>
+        </div>
+       </div>
+    
+       <div class="menu-menu transition_9">
+         <header class="menu-menu_title">
+          <h4 class="menu-menu_title_title">Tiramisu</h4>
+          <p class="menu-menu_info">À la noisette</p>
+         </header>
+   
+         <div class="menu-menu_price">23€</div>
+         <div class="menu-menu_check">
+          <div class="menu-menu_check-icon">
+           <i class="menu-menu_icon fa-check fas"></i>
+          </div>
+        </div>
+       </div>
+      </div>
+   
+      <div class="order_button">
+       <a  class="order_button_restaurant" href="">Commander</a>
+      </div>
+     </main>
 
  <footer class="footer">
   <div class="footer_link">

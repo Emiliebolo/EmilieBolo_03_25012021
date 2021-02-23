@@ -13,14 +13,16 @@
 		padding-right: 20px;
         padding-left: 20px;
 		font-weight: 600;
-	}
-	.reservation_button_restaurant
+	
+	   &_restaurant
 	{
         text-decoration: $text_decoration;
         background-color: transparent;
         cursor: $cursor;
         color: $colour-white;
 	}
+
+   }
 	.fonctionnement
 	{
 		display: flex;
@@ -41,12 +43,14 @@
 		border-radius: 50px;
 		width: 140px;
 		justify-content: center;
-	}
-	.order_button_restaurant{
+	
+	  &_restaurant{
 		text-decoration: $text_decoration;
         background-color: transparent;
         cursor: $cursor;
 		color: $colour-white;
+	}
+
 	}
 
 }
@@ -72,37 +76,42 @@
 	&:hover {
      transform: scale(1.15);
 	}
-}
-.reservation_button_restaurant
-{
+
+    &_restaurant
+  {
     text-decoration: $text_decoration;
     background-color: transparent;
     cursor: $cursor;
     color: $colour-white;
 	font-weight: 600;
-}
+   }
+
+  }
 .order_button{
 	@include background-button;
-	height: 40px;
 	display: flex;
-	align-items: center;
-	text-align: center;
-	color: $colour-white;
-    font-weight: 600;
-	border-radius: 50px;
-	width: 240px;
 	justify-content: center;
-    margin: auto;
+	align-items: center;
+	font-weight: 600;
+	padding: 15px;
+	border-radius: 50px;
 	transform: scale(1);
 	transition: transform 400ms;
+	position: absolute;
+	bottom: 15px;
+	left: 670px;
+	
+	
 	&:hover {
      transform: scale(1.15);
 	}
-}
-.order_button_restaurant{
+
+    &_restaurant{
 	text-decoration: $text_decoration;
 	background-color: transparent;
 	cursor: $cursor;
 	color: $colour-white;
-}
+    }   
+
+  } 
 }
