@@ -105,7 +105,7 @@
     opacity: 0;
     transition: .5s;
     content: "";
-    background: linear-gradient(0deg,#9356dc,#ff79da);
+    color: linear-gradient(0deg,#9356dc,#ff79da);
  }
   
  &_heart_heart{
@@ -225,16 +225,12 @@
       bottom: 5px;
       right: 5px;
   }
-     &_hearts::before{
-    
-      opacity: 0;
-      transition: .5s;
-      content: "";
-      background: linear-gradient(0deg,#9356dc,#ff79da);
-   }
     
    &_heart_heart{
-      color: #9356dc;
+      background: linear-gradient(0deg,#9356dc,#ff79da);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      
 }
    &_heart:hover{
 
