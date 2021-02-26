@@ -1,135 +1,188 @@
-@media (max-width: 480px){
+@media (max-width: 480px) {
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
 
-  .fonctionnement
-	{
-		display: flex;
-		flex-direction: column;
-		text-align: center;
-		margin: 10px;
-	
-	
-	 &_title
-	{
-		font-size: 25px;
-    margin: 10px 0 30px 10px;
-		display:flex;
-		font-family: 'Shrikhand', cursive;
+    &_title {
+      font-size: 25px;
+      margin: 10px 0 30px 10px;
+      display: flex;
+      font-family: "Shrikhand", cursive;
     }
-	
-   &_all
-	{
-		padding: 10px 0 30px 0;
-		
-	}
-	 &_all_icons
-	{ 
-	  display: flex;
-	  justify-content: space-between;
-	  margin: 10px ;
-	  white-space: nowrap;
-	  background-color: $colour-background;
-	  font-size: 14px;
-	  font-weight: 600;
+
+    &_all {
+      padding: 10px 0 30px 0;
+    }
+    &_all_icons {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px;
+      white-space: nowrap;
+      background-color: $colour-background;
+      font-size: 14px;
+      font-weight: 600;
       padding: 25px 80px 25px 60px;
-	  border-radius: 25px;
-	  @include border-fonctionnement_icon;
-    @include box_shadow;
-	}
-  &_all_icons:hover{
-    background-color:#f0dbff;
-}
-	&_all_icon_icon{
-        background: $colour-background_icon;
-        height: 20px;
-        width: 20px;
-        border-radius: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: $colour-white;
-        position: absolute;
-        margin-left: -70px;
-        margin-top: -3px;
-}
-	&_all_icon{
-	  color: $colour-background_icon;	
-	}
+      border-radius: 25px;
+      @include border-fonctionnement_icon;
+      @include box_shadow;
+      transform: scale(1);
+		  transition: transform 400ms;
+    }
+    &_all_icons:active {
+      background-color:#FF79DA;
+      opacity: (0.55);
+      transform: scale(1.02);
+    }
+    &_all_icon_icon {
+      background: $colour-background_icon;
+      height: 20px;
+      width: 20px;
+      border-radius: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $colour-white;
+      position: absolute;
+      margin-left: -70px;
+      margin-top: -3px;
+    }
+    &_all_icon {
+      color: $colour-background_icon;
+    }
 
-	&_link
-	{
-		font-family: 'Roboto', sans-serif;
-	}
+    &_link {
+      font-family: "Roboto", sans-serif;
+    }
+  }
 }
 
-}
-
-@media (min-width: 1400px){
-	.fonctionnement
-{
+@media (min-width: 1400px) {
+  .fonctionnement {
     display: flex;
     flex-direction: wrap;
     text-align: center;
     justify-content: space-around;
     position: relative;
     margin-top: 55px;
-	  padding-top: 20px;
+    padding-top: 20px;
 
-  &_title
-{
-    font-size: 32px;
-	  font-weight: 700;
-  	position: absolute;
-  	top: -70px;
-    left: 40px;
-    font-family: 'Shrikhand', cursive;
-    
-}
-  &_all
-{
-    padding: 10px 0 70px 0;
-    
-}
-  &_all_icons
-{ 
-  display: flex;
-  margin: auto ;
-  white-space: nowrap;
-  background-color: $colour-background;
-  font-size: 16px;
-  font-weight: 500;
-  padding: 20px 120px 20px 40px;
-  border-radius: 20px;
-  @include border-fonctionnement_icon;
-  @include box_shadow;
-}
- &_all_icons:hover{
-  background-color:#f0dbff;
-}
- &_all_icon_icon{
-   background: $colour-background_icon;
-   height: 20px;
-   width: 20px;
-   border-radius: 100px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color: $colour-white;
-   position: absolute;
-   margin-left: -50px;
-   margin-top: -3px;
-}
+    &_title {
+      font-size: 32px;
+      font-weight: 700;
+      position: absolute;
+      top: -70px;
+      left: 40px;
+      font-family: "Shrikhand", cursive;
+    }
+    &_all {
+      padding: 10px 0 70px 0;
+    }
+    &_all_icons {
+      display: flex;
+      margin: auto;
+      white-space: nowrap;
+      background-color: $colour-background;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 20px 120px 20px 40px;
+      border-radius: 20px;
+      @include border-fonctionnement_icon;
+      @include box_shadow;
+      transform: scale(1);
+		  transition: transform 400ms;
+    }
+    &_all_icons:hover {
+      background-color:#FF79DA;
+      opacity: (0.55);
+      transform: scale(1.15);
+    }
+    &_all_icon_icon {
+      background:#9356DC;
+      height: 20px;
+      width: 20px;
+      border-radius: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $colour-white;
+      position: absolute;
+      margin-left: -50px;
+      margin-top: -3px;
+    }
 
- &_all_icon{
-  color: $colour-background_icon ;
-  padding-right: 30px;
-  font-size: 19px;	
-}
+    &_all_icon {
+      color: $colour-background_icon;
+      padding-right: 30px;
+      font-size: 19px;
+    }
 
- &_link
-{
-    font-family: 'Roboto', sans-serif;
+    &_link {
+      font-family: "Roboto", sans-serif;
+    }
   }
+}
 
- }
+@media (min-width: 481px) and (max-width: 768px){
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+
+    &_title {
+      font-size: 25px;
+      margin: 10px 0 30px 10px;
+      display: flex;
+      font-family: "Shrikhand", cursive;
+    }
+
+    &_all {
+      padding: 10px 0 30px 0;
+    }
+    &_all_icons {
+      display: flex;
+      justify-content: space-around;
+      margin-left: 100px;
+      margin-right: 100px ;
+      white-space: nowrap;
+      background-color: $colour-background;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 25px 90px 25px 10px;
+      border-radius: 25px;
+      @include border-fonctionnement_icon;
+      @include box_shadow;
+      transform: scale(1);
+		  transition: transform 400ms;
+    }
+    &_all_icons:hover {
+      background-color:#FF79DA;
+      opacity: (0.55);
+      transform: scale(1.02);
+    }
+    &_all_icon_icon {
+      background: $colour-background_icon;
+      height: 20px;
+      width: 20px;
+      border-radius: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $colour-white;
+      position: absolute;
+      margin-left: -460px;
+      margin-top: -3px;
+    }
+    &_all_icon {
+      color: $colour-background_icon;
+    }
+
+    &_link {
+      font-family: "Roboto", sans-serif;
+    }
+  }
 
 }

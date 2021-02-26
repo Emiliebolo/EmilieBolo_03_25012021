@@ -84,3 +84,42 @@
 
 }
 
+@media (min-width: 481px) and (max-width: 768px){
+	.header_title
+{
+ display: flex;
+ justify-content: center;
+ margin: 0;
+ font-family: "Shrikhand", "cursive";
+
+  &_title_title
+{
+ font-weight: 700;
+ font-size: 60px;
+ 
+
+  }
+
+}
+
+/* menu version desktop  */
+.header_title_arrow{
+    display:flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+
+	}
+
+   .header_arrow{
+    position: absolute;
+    left: 90px;
+    top: 30px;
+    font-size: 50px;
+     
+
+   }  
+
+
+}
+

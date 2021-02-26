@@ -11,7 +11,7 @@
   }
   .menu-main {
     background-color: $colour-background;
-    border-radius: 90px 90px 0 0;
+    border-radius: 50px 50px 0 0;
     padding-bottom: 50px;
     margin-top: -50px;
     max-width: 100%;
@@ -19,15 +19,37 @@
 
     &_header {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
+      margin: 15px;
     }
     &_header_title {
       font-weight: 700;
       font-size: 20px;
       font-family: "Shrikhand", "cursive";
+      margin: 5px;
     }
     &_icon {
-      padding-top: 20px;
+      font-size: 25px;
+      background-color: $colour-background;
+      opacity: 1;
+      z-index: 1;
+    }
+    &_icon, &_icon_icon{
+      position: absolute;
+      top: 10px;
+      right: 25px;
+    }
+    &_icon_icon{
+      background: linear-gradient(0deg, #9356dc, #ff79da);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 100% 100%;
+      font-size: 25px;
+    }
+    &_icon:active{
+      opacity: 0 !important;
+      transition-duration: 0.5s;
+      transition-property: background;
     }
   }
   .restaurants-menu {
@@ -59,200 +81,11 @@
     }
   }
   .menu-menu {
-    background-color: $colour-white;
-    @include box_shadow;
-    border-radius: 10px;
-    max-width: 100%;
-    margin: 10px 0px;
-    padding: 10px;
-    overflow: hidden;
-    cursor: $cursor;
-    animation: menu-transition 0.7s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    transform: scale(0);
-
-    @keyframes menu-transition {
-      0% {
-        transform: scale(0);
-        opacity: 0;
-      }
-      50% {
-        opacity: 0;
-      }
-      100% {
-        transform: scale(1);
-        opacity: 1;
-      }
-    }
-
-    &_title {
-      flex: 1;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      margin: 0;
-    }
-
-    &_title_title {
-      margin: 0;
-      overflow: hidden;
-      font-weight: bold;
-      font-size: 19px;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-    }
-    &_info {
-      margin: 0px;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
-    }
-
-    &_price {
-      display: flex;
-      justify-content: flex-end;
-      font-weight: 600;
-      padding-left: 18px;
-      align-items: flex-end;
-      font-family: "Roboto", sans-serif;
-    }
-
-    &_check {
-      background-color: $colour-background_restaurant;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: -50px -250px 0 325px;
-      transition-duration: 0.7s;
-      width: 103px;
-      height: 55px;
-    }
-    &:active,
-    &_check {
-      margin-right: -60px;
-    }
-
-    &_check-icon {
-      height: 25.6px;
-      width: 25.6px;
-      background-color: $colour-white;
-      color: $colour-background_restaurant;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 100px;
-      transition-duration: 0.9s;
-    }
-    &:active,
-    &_check-icon {
-      transform: rotate(0);
-    }
-    &_icon {
-      color: $colour-background_restaurant;
-      display: inline-block;
-    }
-  }
-
-  .transition_1 {
-    animation-delay: 0s;
-  }
-  .transition_2 {
-    animation-delay: 0.1s;
-  }
-  .transition_2 {
-    animation-delay: 0.2s;
-  }
-  .transition_3 {
-    animation-delay: 0.3s;
-  }
-
-  .transition_4 {
-    animation-delay: 0.4s;
-  }
-  .transition_5 {
-    animation-delay: 0.5s;
-  }
-  .transition_6 {
-    animation-delay: 0.6s;
-  }
-  .transition_7 {
-    animation-delay: 0.7s;
-  }
-  .transition_8 {
-    animation-delay: 0.8s;
-  }
-  .transition_9 {
-    animation-delay: 0.9s;
-  }
-}
-
-@media (min-width: 1400px) {
-  .background_img_img {
-    margin-bottom: -30px;
-    max-height: 350px;
-    object-fit: cover;
-    width: 100%;
-  }
-
-  main {
-    display: block;
-  }
-  .menu-main {
-    background-color: $colour-background;
-    border-radius: 90px 90px 0 0;
-    padding-bottom: 50px;
-    margin-top: -50px;
-    max-width: 100%;
-    position: relative;
-
-    &_header {
-      display: flex;
-      justify-content: space-around;
-    }
-    &_header_title {
-      font-weight: 700;
-      font-size: 38px;
-      font-family: "Shrikhand", "cursive";
-    }
-    &_icon {
-      padding-top: 50px;
-    }
-  }
-  .restaurants-menu {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 15px;
-    margin: 0 50px;
-  }
-  .menu {
-    max-width: 100%;
-    overflow: hidden;
-    padding: 0px 10px;
-
-    &_title {
-      font-family: "Roboto", sans-serif;
-      font-weight: normal;
-      padding-bottom: 6px;
-      position: relative;
-      text-transform: uppercase;
-      &::after {
-        background-color: $colour-background_restaurant;
-        bottom: 0;
-        content: "";
-        height: 4px;
-        left: 0;
-        position: absolute;
-        width: 30px;
-      }
-    }
-  }
-  .menu-menu {
     display: flex;
     background-color: $colour-white;
     @include box-shadow;
     border-radius: 10px;
-    margin: 30px 0;
+    margin: 20px 0;
     padding: 10px;
     max-width: 100%;
     overflow: hidden;
@@ -285,16 +118,16 @@
 
     &_title_title {
       margin: 0;
-     
+
       overflow: hidden;
       font-weight: bold;
-      
+
       white-space: nowrap;
       text-overflow: ellipsis;
     }
     &_info {
       margin: 0px;
-     
+
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
@@ -373,4 +206,427 @@
   .transition_9 {
     animation-delay: 0.9s;
   }
+}
+
+@media (min-width: 1400px) {
+  .background_img_img {
+    margin-bottom: -30px;
+    max-height: 350px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  main {
+    display: block;
+  }
+  .menu-main {
+    background-color: $colour-background;
+    border-radius: 90px 90px 0 0;
+    padding-bottom: 50px;
+    margin-top: -50px;
+    max-width: 100%;
+    position: relative;
+
+    &_header {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0 0 30px;
+    }
+    &_header_title {
+      font-weight: 700;
+      font-size: 38px;
+      font-family: "Shrikhand", "cursive";
+    }
+    &_icon {
+      font-size: 35px;
+      background-color: $colour-background;
+      opacity: 1;
+      z-index: 1;
+    }
+    &_icon, &_icon_icon{
+      position: absolute;
+      top: 45px;
+      right: 95px;
+    }
+    &_icon_icon{
+      background: linear-gradient(0deg, #9356dc, #ff79da);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 100% 100%;
+      font-size: 35px;
+    }
+    &_icon:hover{
+      opacity: 0 !important;
+      transition-duration: 0.5s;
+      transition-property: background;
+    }
+  }
+  .restaurants-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+    margin: 0 50px;
+  }
+  .menu {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0px 10px;
+
+    &_title {
+      font-family: "Roboto", sans-serif;
+      font-weight: normal;
+      padding-bottom: 6px;
+      position: relative;
+      text-transform: uppercase;
+      &::after {
+        background-color: $colour-background_restaurant;
+        bottom: 0;
+        content: "";
+        height: 4px;
+        left: 0;
+        position: absolute;
+        width: 30px;
+      }
+    }
+  }
+  .menu-menu {
+    display: flex;
+    background-color: $colour-white;
+    @include box-shadow;
+    border-radius: 10px;
+    margin: 30px 0;
+    padding: 10px;
+    max-width: 100%;
+    overflow: hidden;
+    cursor: $cursor;
+    animation: menu-transition 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+
+    @keyframes menu-transition {
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    &_title {
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin: 0;
+    }
+
+    &_title_title {
+      margin: 0;
+
+      overflow: hidden;
+      font-weight: bold;
+
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    &_info {
+      margin: 0px;
+
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    &_price {
+      display: flex;
+      justify-content: flex-end;
+      font-weight: 600;
+      padding-left: 20px;
+      align-items: flex-end;
+      font-family: "Roboto", sans-serif;
+    }
+
+    &_check {
+      background-color: $colour-background_restaurant;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: -16px -120px -16px 16px;
+      transition-duration: 0.5s;
+      width: 105px;
+    }
+    &:hover &_check {
+      margin-right: -10px;
+    }
+
+    &_check-icon {
+      height: 25.6px;
+      width: 25.6px;
+      background-color: $colour-white;
+      color: $colour-background_restaurant;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100px;
+      transition-duration: 0.5s;
+      transform: rotate(180deg);
+    }
+    &:hover &_check-icon {
+      transform: rotate(0);
+    }
+    &_icon {
+      color: $colour-background_restaurant;
+    }
+  }
+
+  .transition_1 {
+    animation-delay: 0s;
+  }
+  .transition_2 {
+    animation-delay: 0.1s;
+  }
+  .transition_2 {
+    animation-delay: 0.2s;
+  }
+  .transition_3 {
+    animation-delay: 0.3s;
+  }
+
+  .transition_4 {
+    animation-delay: 0.4s;
+  }
+  .transition_5 {
+    animation-delay: 0.5s;
+  }
+  .transition_6 {
+    animation-delay: 0.6s;
+  }
+  .transition_7{  
+    animation-delay: 0.8s;
+  }
+  .transition_8 {
+    animation-delay: 0.7s;
+  } 
+  .transition_9 {
+    animation-delay: 0.9s;
+  }
+  
+    
+  }
+  
+
+@media (min-width: 481px) and (max-width: 768px){
+  .background_img_img {
+    margin-bottom: -30px;
+    max-height: 350px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  main {
+    display: block;
+  }
+  .menu-main {
+    background-color: $colour-background;
+    border-radius: 50px 50px 0 0;
+    padding-bottom: 50px;
+    margin-top: -50px;
+    max-width: 100%;
+    position: relative;
+
+    &_header {
+      display: flex;
+      justify-content: space-between;
+      margin: 25px;
+    }
+    &_header_title {
+      font-weight: 700;
+      font-size: 20px;
+      font-family: "Shrikhand", "cursive";
+      margin: 5px;
+    }
+    &_icon {
+      font-size: 25px;
+      background-color: $colour-background;
+      opacity: 1;
+      z-index: 1;
+    }
+    &_icon, &_icon_icon{
+      position: absolute;
+      top: 10px;
+      right: 65px;
+    }
+    &_icon_icon{
+      background: linear-gradient(0deg, #9356dc, #ff79da);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 100% 100%;
+      font-size: 25px;
+    }
+    &_icon:hover{
+      opacity: 0 !important;
+      transition-duration: 0.5s;
+      transition-property: background;
+    }
+  }
+  .restaurants-menu {
+    margin: 0 0 0 15px;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .menu {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0px 10px;
+
+    &_title {
+      font-family: "Roboto", sans-serif;
+      font-weight: normal;
+      padding-bottom: 6px;
+      position: relative;
+      text-transform: uppercase;
+      &::after {
+        background-color: $colour-background_restaurant;
+        bottom: 0;
+        content: "";
+        height: 4px;
+        left: 0;
+        position: absolute;
+        width: 30px;
+      }
+    }
+  }
+  .menu-menu {
+    display: flex;
+    background-color: $colour-white;
+    @include box-shadow;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 10px;
+    max-width: 100%;
+    overflow: hidden;
+    cursor: $cursor;
+    animation: menu-transition 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+
+    @keyframes menu-transition {
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    &_title {
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin: 0;
+    }
+
+    &_title_title {
+      margin: 0;
+
+      overflow: hidden;
+      font-weight: bold;
+
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    &_info {
+      margin: 0px;
+
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    &_price {
+      display: flex;
+      justify-content: flex-end;
+      font-weight: 600;
+      padding-left: 20px;
+      align-items: flex-end;
+      font-family: "Roboto", sans-serif;
+    }
+
+    &_check {
+      background-color: $colour-background_restaurant;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: -16px -120px -16px 16px;
+      transition-duration: 0.5s;
+      width: 105px;
+    }
+    &:hover &_check {
+      margin-right: -10px;
+    }
+
+    &_check-icon {
+      height: 25.6px;
+      width: 25.6px;
+      background-color: $colour-white;
+      color: $colour-background_restaurant;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100px;
+      transition-duration: 0.5s;
+      transform: rotate(180deg);
+    }
+    &:hover &_check-icon {
+      transform: rotate(0);
+    }
+    &_icon {
+      color: $colour-background_restaurant;
+    }
+  }
+
+  .transition_1 {
+    animation-delay: 0s;
+  }
+  .transition_2 {
+    animation-delay: 0.1s;
+  }
+  .transition_2 {
+    animation-delay: 0.2s;
+  }
+  .transition_3 {
+    animation-delay: 0.3s;
+  }
+
+  .transition_4 {
+    animation-delay: 0.4s;
+  }
+  .transition_5 {
+    animation-delay: 0.5s;
+  }
+  .transition_6 {
+    animation-delay: 0.6s;
+  }
+  .transition_7 {
+    animation-delay: 0.7s;
+  }
+  .transition_8 {
+    animation-delay: 0.8s;
+  }
+  .transition_9 {
+    animation-delay: 0.9s;
+  }
+
 }
