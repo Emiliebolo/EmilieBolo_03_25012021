@@ -30,10 +30,11 @@
       transform: scale(1);
 		  transition: transform 400ms;
     }
-    &_all_icons:active {
-      background-color:#FF79DA;
-      opacity: (0.55);
-      transform: scale(1.02);
+    &_all_icons:hover {
+      background-color:rgba($color:#e9ddf8, $alpha: 0.6);
+      transform: scale(1.05);
+      box-shadow: 10px 0 25px #0000002E;
+      color:#9356DC
     }
     &_all_icon_icon {
       background: $colour-background_icon;
@@ -94,9 +95,10 @@
 		  transition: transform 400ms;
     }
     &_all_icons:hover {
-      background-color:#FF79DA;
-      opacity: (0.55);
+      background-color:rgba($color:#e9ddf8, $alpha: 0.6);
       transform: scale(1.15);
+      box-shadow: 10px 0 25px #0000002E;
+      color:#9356DC;
     }
     &_all_icon_icon {
       background:#9356DC;
@@ -113,9 +115,12 @@
     }
 
     &_all_icon {
-      color: $colour-background_icon;
+      color: #7e7979;
       padding-right: 30px;
       font-size: 19px;
+    }
+    &_all_icon:hover{
+      color: #9356DC;
     }
 
     &_link {
@@ -159,9 +164,10 @@
 		  transition: transform 400ms;
     }
     &_all_icons:hover {
-      background-color:#FF79DA;
-      opacity: (0.55);
-      transform: scale(1.02);
+      background-color:rgba($color:#e9ddf8, $alpha: 0.6);
+      transform: scale(1.15);
+      box-shadow: 10px 0 25px #0000002E;
+      color:#9356DC
     }
     &_all_icon_icon {
       background: $colour-background_icon;

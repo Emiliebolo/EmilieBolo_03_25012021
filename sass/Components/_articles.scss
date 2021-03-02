@@ -99,7 +99,7 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    &_heart:active {
+    &_heart:hover {
       opacity: 0 !important;
       transition-duration: 0.5s;
       transition-property: background;
@@ -198,6 +198,7 @@
       background-color: $colour-white;
       opacity: 1;
       z-index: 1;
+     
     }
     &_heart,
     &_heart_heart {
@@ -211,11 +212,13 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-size: 100% 100%;
+      
     }
     &_heart:hover {
       opacity: 0 !important;
       transition-duration: 0.5s;
       transition-property: background;
+      
     }
    
   }

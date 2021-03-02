@@ -757,11 +757,13 @@
     transition: transform 400ms;
     transition: transform 400ms, -webkit-transform 400ms;
   }
-  .fonctionnement_all_icons:active {
-    background-color: #FF79DA;
-    opacity: 0.55;
-    -webkit-transform: scale(1.02);
-            transform: scale(1.02);
+  .fonctionnement_all_icons:hover {
+    background-color: rgba(233, 221, 248, 0.6);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-box-shadow: 10px 0 25px #0000002E;
+            box-shadow: 10px 0 25px #0000002E;
+    color: #9356DC;
   }
   .fonctionnement_all_icon_icon {
     background: #9356DC;
@@ -839,10 +841,12 @@
     transition: transform 400ms, -webkit-transform 400ms;
   }
   .fonctionnement_all_icons:hover {
-    background-color: #FF79DA;
-    opacity: 0.55;
+    background-color: rgba(233, 221, 248, 0.6);
     -webkit-transform: scale(1.15);
             transform: scale(1.15);
+    -webkit-box-shadow: 10px 0 25px #0000002E;
+            box-shadow: 10px 0 25px #0000002E;
+    color: #9356DC;
   }
   .fonctionnement_all_icon_icon {
     background: #9356DC;
@@ -864,9 +868,12 @@
     margin-top: -3px;
   }
   .fonctionnement_all_icon {
-    color: #9356DC;
+    color: #7e7979;
     padding-right: 30px;
     font-size: 19px;
+  }
+  .fonctionnement_all_icon:hover {
+    color: #9356DC;
   }
   .fonctionnement_link {
     font-family: "Roboto", sans-serif;
@@ -924,10 +931,12 @@
     transition: transform 400ms, -webkit-transform 400ms;
   }
   .fonctionnement_all_icons:hover {
-    background-color: #FF79DA;
-    opacity: 0.55;
-    -webkit-transform: scale(1.02);
-            transform: scale(1.02);
+    background-color: rgba(233, 221, 248, 0.6);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    -webkit-box-shadow: 10px 0 25px #0000002E;
+            box-shadow: 10px 0 25px #0000002E;
+    color: #9356DC;
   }
   .fonctionnement_all_icon_icon {
     background: #9356DC;
@@ -1323,7 +1332,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .restaurant_heart:active {
+  .restaurant_heart:hover {
     opacity: 0 !important;
     -webkit-transition-duration: 0.5s;
             transition-duration: 0.5s;
@@ -1784,7 +1793,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: -16px -120px -16px 16px;
+    margin: -15px -120px -15px 15px;
     -webkit-transition-duration: 0.5s;
             transition-duration: 0.5s;
     width: 105px;
@@ -2049,10 +2058,10 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: -16px -120px -16px 16px;
+    margin: -15px -120px -15px 15px;
     -webkit-transition-duration: 0.5s;
             transition-duration: 0.5s;
-    width: 105px;
+    width: 107px;
   }
   .menu-menu:hover .menu-menu_check {
     margin-right: -10px;
@@ -2316,7 +2325,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: -16px -120px -16px 16px;
+    margin: -15px -120px -15px 15px;
     -webkit-transition-duration: 0.5s;
             transition-duration: 0.5s;
     width: 105px;
