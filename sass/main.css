@@ -967,8 +967,8 @@
 
 @media (max-width: 480px) {
   .reservation_button {
-    background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+    background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
     height: 50px;
     margin: auto;
     display: -webkit-inline-box;
@@ -1015,8 +1015,8 @@
     margin: 10px;
   }
   .order_button {
-    background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+    background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
     height: 40px;
     margin: 45px 0 0px 100px;
     display: -webkit-box;
@@ -1053,8 +1053,11 @@
 
 @media (min-width: 1400px) {
   .reservation_button {
-    background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+    background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    background-color: #686868;
+    -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.25);
+            box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.25);
     height: 50px;
     margin: auto;
     display: -webkit-inline-box;
@@ -1069,7 +1072,8 @@
     text-align: center;
     color: white;
     border-radius: 50px;
-    font-weight: 700;
+    font-weight: 500;
+    font-size: 23px;
     padding-right: 50px;
     padding-left: 50px;
     -webkit-transform: scale(1);
@@ -1080,8 +1084,11 @@
     transition: transform 400ms, -webkit-transform 400ms;
   }
   .reservation_button:hover {
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
   }
   .reservation_button_restaurant {
     text-decoration: none;
@@ -1091,8 +1098,8 @@
     font-weight: 600;
   }
   .order_button {
-    background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+    background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1129,8 +1136,8 @@
 
 @media (min-width: 481px) and (max-width: 768px) {
   .reservation_button {
-    background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+    background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
     height: 50px;
     margin: auto;
     display: -webkit-inline-box;
@@ -1177,8 +1184,8 @@
     margin: 10px;
   }
   .order_button {
-    background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+    background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
     height: 40px;
     margin: 45px 0 0px 300px;
     display: -webkit-box;

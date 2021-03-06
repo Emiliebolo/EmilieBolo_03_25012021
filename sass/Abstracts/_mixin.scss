@@ -6,7 +6,8 @@
 }
 
 @mixin background-button{
-    background: linear-gradient(to bottom right,#FF79DA, #9356DC);
+    background-image: linear-gradient(to bottom right,#FF79DA, #9356DC);
+    
 }
 
 @mixin border-fonctionnement_icon{
