@@ -1100,6 +1100,9 @@
   .order_button {
     background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
     background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    background-color: #686868;
+    -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.25);
+            box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.25);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1123,8 +1126,11 @@
     left: 670px;
   }
   .order_button:hover {
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
   }
   .order_button_restaurant {
     text-decoration: none;
@@ -1138,6 +1144,9 @@
   .reservation_button {
     background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
     background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    background-color: #686868;
+    -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.25);
+            box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.25);
     height: 50px;
     margin: auto;
     display: -webkit-inline-box;
@@ -1209,8 +1218,11 @@
     transition: transform 400ms, -webkit-transform 400ms;
   }
   .order_button:hover {
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
   }
   .order_button_restaurant {
     text-decoration: none;
