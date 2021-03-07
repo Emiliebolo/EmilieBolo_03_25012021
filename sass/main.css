@@ -565,7 +565,8 @@
     padding-bottom: 80px;
   }
   .information_ohmyfood {
-    margin: 5px 0 10px 10px;
+    margin: 5px 10px 10px 10px;
+    text-align: justify;
   }
   .reservation {
     display: -webkit-box;
@@ -969,6 +970,9 @@
   .reservation_button {
     background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
     background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    background-color: #686868;
+    -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.25);
+            box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.25);
     height: 50px;
     margin: auto;
     display: -webkit-inline-box;
@@ -996,6 +1000,9 @@
   .reservation_button:hover {
     -webkit-transform: scale(1.15);
             transform: scale(1.15);
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
   }
   .reservation_button_restaurant {
     text-decoration: none;
@@ -1017,6 +1024,9 @@
   .order_button {
     background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
     background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    background-color: #686868;
+    -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.25);
+            box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.25);
     height: 40px;
     margin: 45px 0 0px 100px;
     display: -webkit-box;
@@ -1042,6 +1052,9 @@
   .order_button:hover {
     -webkit-transform: scale(1.15);
             transform: scale(1.15);
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
   }
   .order_button_restaurant {
     text-decoration: none;
