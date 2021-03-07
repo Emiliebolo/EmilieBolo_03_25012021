@@ -1174,6 +1174,9 @@
   .reservation_button:hover {
     -webkit-transform: scale(1.15);
             transform: scale(1.15);
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
   }
   .reservation_button_restaurant {
     text-decoration: none;

@@ -142,6 +142,8 @@
 		transition: transform 400ms;
 		&:hover {
 			transform: scale(1.15);
+			background-color: #FFFFFF;
+			box-shadow: 7px 3px 10px rgba(0,0,0,.5);
 		}
 
 		&_restaurant {
