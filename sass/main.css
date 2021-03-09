@@ -2324,6 +2324,7 @@
   }
   .menu-menu_title_title {
     margin: 0;
+    font-size: 18px;
     overflow: hidden;
     font-weight: bold;
     white-space: nowrap;
@@ -2331,6 +2332,7 @@
   }
   .menu-menu_info {
     margin: 0px;
+    font-size: 18px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
