@@ -1596,9 +1596,11 @@
   }
   .restaurant_title_title {
     margin: 0 0 0 5px;
+    font-size: 19px;
   }
   .restaurant_information {
     margin: 0 0 0 5px;
+    font-size: 18px;
   }
   .restaurant_hearts {
     display: -webkit-box;
